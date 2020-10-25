@@ -47,4 +47,39 @@ header .logo {
   margin-right: 1.5rem;
 }
 
-header
+header .right-nav {
+  text-align: right;
+  line-height: 35px;
+}
+
+.right-nav input {
+  margin-top: 17px;
+}
+
+.search-icon {
+  margin-left: -2rem;
+}
+
+/*Main*/
+
+main .container{
+width: 80%;
+margin: auto;
+display: grid;
+grid-template-columns: 1fr 2fr;
+grid-gap: 1rem;
+}
+
+main .item{
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+hr{
+    color: #cccccc;
+    opacity: 0.3;
+}
+
+input[type="checkbox"]{
+    margin-top: 1.5rem;
+}
