@@ -27,7 +27,6 @@ a {
 header {
   width: 100;
   max-height: 70px;
-  background: lightblue;
 }
 
 .navigation {
@@ -61,7 +60,10 @@ header .right-nav {
 }
 
 /*Main*/
-
+main{
+    margin-top: 3rem;
+    padding-bottom: 5rem;
+}
 main .container{
 width: 80%;
 margin: auto;
@@ -73,6 +75,7 @@ grid-gap: 1rem;
 main .item{
     display: grid;
     grid-template-columns: 10% 90%;
+    
 }
 
 hr{
@@ -82,4 +85,38 @@ hr{
 
 input[type="checkbox"]{
     margin-top: 1.5rem;
+}
+
+/*Left content*/
+.left-content{
+margin-right: 5rem;
+}
+
+.left-content img{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+/*Fom subscription*/
+
+form{
+    margin-top: 1.5rem;
+}
+
+form input{
+    border: none;
+    border-bottom: solid 1px #ccc;
+    padding-bottom: 0.5rem;
+    width: 50%;
+    margin-right: 2rem;
+    color:gray;
+}
+
+form button{
+    border: none;
+    background: green;
+    color: honeydew;
+    padding: 0.5rem 1.4rem;
+    border-radius: 0.8rem;
+    cursor: pointer;
 }
