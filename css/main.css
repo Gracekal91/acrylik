@@ -22,6 +22,11 @@ a {
   color: gray;
 }
 
+p{
+    color: rgba(0, 0, 0, 0.596);
+    font-size: 0.9rem;
+}
+
 /*Header*/
 
 header {
@@ -39,7 +44,7 @@ header {
 header li {
   display: inline-block;
   line-height: 35px;
-  margin-right: 0.5rem;
+  margin-right: 0.8rem;
 }
 
 header .logo {
@@ -58,7 +63,13 @@ header .right-nav {
 .search-icon {
   margin-left: -2rem;
 }
-
+.right-nav input{
+    border: none;
+    background: rgba(0, 0, 0, 0.055);
+    border-radius: 0.3rem;
+    padding: 0.6rem 1rem;
+    color: rgb(99, 96, 96);
+}
 /*Main*/
 main{
     margin-top: 3rem;
@@ -119,4 +130,33 @@ form button{
     padding: 0.5rem 1.4rem;
     border-radius: 0.8rem;
     cursor: pointer;
+}
+
+/*responsive*/
+
+@media (max-width: 760px){
+    .left-content{
+        margin-right: 1rem;
+        }
+
+        form input{
+            width: 100%;
+            margin-bottom: 0.7rem;
+        }
+}
+
+@media (max-width: 480px){
+    main .container{
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+        }
+
+        .left-content{
+            margin-right: 0;
+            }
+
+        form input{
+            width: 100%;
+            margin-bottom: 0.7rem;
+        }
 }
