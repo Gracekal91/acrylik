@@ -47,6 +47,18 @@ header li {
   margin-right: 0.8rem;
 }
 
+/*Hover effect*/
+
+.navigation ul li a,
+.navigation ul li a:after,
+.navigation ul li a:before {
+  transition: all .5s;
+}
+.navigation ul li a:hover {
+  color: rgb(16, 141, 22);
+
+}
+
 header .logo {
   margin-right: 1.5rem;
 }
