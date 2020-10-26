@@ -27,6 +27,11 @@ p{
     font-size: 0.9rem;
 }
 
+h4{
+    color: #000000d8;
+    font-weight: 600;
+}
+
 /*Header*/
 
 header {
@@ -47,6 +52,27 @@ header li {
   margin-right: 0.8rem;
 }
 
+.burger{
+  display: none;
+}
+
+.burger .line-1{
+  background:rgb(192, 190, 190);
+  width: 30px;
+  height: 2px;
+  margin-bottom: 2px;
+}
+.burger .line-2{
+  background:rgb(192, 190, 190);
+  width: 25px;
+  height: 2px;
+  margin-bottom: 2px;
+}
+.burger .line-3{
+  background:rgb(192, 190, 190);
+  width: 20px;
+  height: 2px;
+}
 /*Hover effect*/
 
 .navigation ul li a,
@@ -56,8 +82,24 @@ header li {
 }
 .navigation ul li a:hover {
   color: rgb(16, 141, 22);
+  border-bottom: solid rgb(16, 141, 22) 1.5px;
+  padding-bottom: 0.5rem;
 
 }
+
+/* Hover 2*/
+
+form button,
+form button:after,
+form button:before {
+  transition: all .5s;
+}
+form button[type="submit"]:hover {
+background: rgb(7, 88, 11);
+}
+
+
+
 
 header .logo {
   margin-right: 1.5rem;
@@ -145,7 +187,16 @@ form button{
 }
 
 /*responsive*/
+@media(max-width:960px){
+  header li{
+    margin-right: 0.3rem;
+    font-size: 0.9rem;
+  }
 
+  .right-nav input{
+    width: 70%;
+  }
+}
 @media (max-width: 760px){
     .left-content{
         margin-right: 1rem;
@@ -155,6 +206,25 @@ form button{
             width: 100%;
             margin-bottom: 0.7rem;
         }
+
+        .burger{
+          display: block;
+          margin-top: 30px;
+          margin-left: auto;
+          float: right;
+        }
+
+        .right-nav input{
+          display: none;
+        }
+        .right-nav .search-icon{
+          display: none;
+        }
+
+        .left-nav ul .hide{
+          display: none;
+        }
+
 }
 
 @media (max-width: 480px){
